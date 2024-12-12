@@ -44,7 +44,7 @@ const show = (req,res)=>{
     });
 }
 
-const destroy = (req,res)=>{
+const destroy = (req,res)=>{  //!!also modify the other tables
     const bookId = Number(req.params.id);
     const query = `DELETE from books WHERE id=?`;
     connection.query(query,[bookId],(err,results)=>{
