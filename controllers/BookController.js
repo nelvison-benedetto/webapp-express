@@ -7,9 +7,9 @@ const connection = require('../db/connection.js');
 
 const pathImgCover = path.join(__dirname, '../public/imgcover');
 const DB_NAMEDB = process.env.DB_NAMEDB;
-console.log(`DB_NAMEDB is: ${DB_NAMEDB}`);
+//console.log(`DB_NAMEDB is: ${DB_NAMEDB}`);
 
-    //Set Multer x upload imgs to the express backend
+//Set Multer x upload imgs to the express backend
 const storage = multer.diskStorage({
     destination: (req,file,cb)=>{
         cb(null, pathImgCover);
