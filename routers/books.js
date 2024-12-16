@@ -3,12 +3,13 @@
 const express = require('express');
 const router = express.Router();
 const BookController = require('../controllers/BookController.js');
-//const { upload } = BookController; // x multer in this file
 
-router.get('/', BookController.index);
-router.get('/:id',BookController.show);
-//router.post('/',BookController.store);
-//router.put('/:id', BookController.update);
-router.delete('/:id',BookController.destroy);
+//run multer BEFORE the post/put,dice a Multer di aspettarsi 1 solo file che è nel campo "cover_image"
+router.post('/',  BookController.uploadImgCover.single('cover_image')  ,BookController.storeBook);
+router.put('/:id',  BookController.uploadImgCover.single('cover_image')  ,BookController.updateBook);
+
+router.get('/', BookController.indexBook);
+router.get('/:id',BookController.showBook);
+router.delete('/:id',BookController.destroyBook);
 
 module.exports = router;
