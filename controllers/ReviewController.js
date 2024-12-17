@@ -60,10 +60,10 @@ const showReviewsBook = (req,res)=>{
     const query = `SELECT * FROM reviews WHERE book_id=?`;
     connection.query(query,[bookId],(err,result)=>{
         if(err) return res.status(500).json({error:err});
-        if(result.length===0){
-            return res.status(404).json({error:'no reviews found for this book'});
-        }
-        return res.status(200).json({data:result});
+        // if(result.length===0){
+        //     return res.status(404).json({error:'no reviews found for this book'});
+        // }  //better to return an empty array if the items are not there yet instead of an error!
+        return res.status(200).json({data:result});  
     });
 };
 
