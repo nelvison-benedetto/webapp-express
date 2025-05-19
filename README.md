@@ -13,6 +13,20 @@ Project developed using a modern web stack—Node.js (Express) for server-side l
 - Environment variable support via .env for flexible deployment
 
 ---
+## Environment Variables
+You can define these in an .env file or export them:
+```env
+DB_HOST=localhost
+DB_PORT=your_database_port
+DB_USER=your_database_user
+DB_PSW=your_database_password
+DB_NAMEDB=your_database_name
+
+HOST=http://localhost
+PORT=3001
+```
+
+---
 ### Run project
 1. Clone this repository
 2. Install dependencies and start the server
