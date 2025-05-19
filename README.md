@@ -5,7 +5,7 @@
 Project developed using a modern web stack—Node.js (Express) for server-side logic, MySQL for relational data storage, and Multer for handling multipart form data, including book cover image uploads. The backend exposes a RESTful API that supports full CRUD operations on books and their reviews, enforces relational constraints, and includes CORS configuration for cross-origin access. Middleware is implemented for JSON parsing and graceful 404 error handling.
 
 ---
-### Key features include:
+### Key features
 - Modular route and controller structure
 - MySQL with foreign key relationships (e.g., book → review)
 - Auto-managed timestamps and validation-ready logic
