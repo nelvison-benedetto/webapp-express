@@ -25,7 +25,7 @@ CREATE TABLE `books` (
   `title` varchar(255) NOT NULL,
   `author` varchar(255) NOT NULL,
   `genre` varchar(255) DEFAULT NULL,
-  `publication_year` year(4) DEFAULT NULL,
+  `publication_year` int(4) DEFAULT NULL, 
   `description` text DEFAULT NULL,
   `cover_image` varchar(255) DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
@@ -33,7 +33,7 @@ CREATE TABLE `books` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 
---
+--`publication_year` year(4) DEFAULT NULL,  year only for range data 1901-2155!!
 -- Dumping data for table `books`
 --
 

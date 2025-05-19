@@ -16,6 +16,7 @@ const notFoundMiddleware = require('./middleware/notFoundMiddleware.js');
 //Middleware
 app.use(express.json());  //enables requests in json format
 app.use(cors());  //for Cross-Origin Resource Sharing
+app.use(express.static(path.join(__dirname, 'public')));  //important
 app.use('/imgcover', express.static(path.join(__dirname, 'public/imgcover')));  //serves file in the 'public/imgcover' folder when requested with urls containing "/imgcover"
 
 //Routes
