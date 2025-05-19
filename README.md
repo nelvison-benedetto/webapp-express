@@ -13,7 +13,7 @@ Project developed using a modern web stack—Node.js (Express) for server-side l
 - Environment variable support via .env for flexible deployment
 
 ---
-## Environment Variables
+### Environment Variables
 You can define these in an .env file or export them:
 ```env
 DB_HOST=localhost
