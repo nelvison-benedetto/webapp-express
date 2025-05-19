@@ -1,7 +1,8 @@
 ## Express Book-Review Management w Multer
 
-Developed project: a RESTful web application backend for managing books and user reviews, built with Node.js, Express, and MySQL.
-This API allows users to perform full CRUD operations on books and their associated reviews. It supports structured data persistence, relational constraints, and dynamic content handling (e.g., book covers). CORS is enabled to allow front-end access across origins. Middleware handles 404 errors and JSON request parsing.
+🔗 𝐅𝐫𝐨𝐧𝐭-𝐞𝐧𝐝: https://github.com/nelvison-benedetto/webapp-react
+
+Project developed using a modern web stack—Node.js (Express) for server-side logic, MySQL for relational data storage, and Multer for handling multipart form data, including book cover image uploads. The backend exposes a RESTful API that supports full CRUD operations on books and their reviews, enforces relational constraints, and includes CORS configuration for cross-origin access. Middleware is implemented for JSON parsing and graceful 404 error handling.
 
 ---
 ### Key features include:
